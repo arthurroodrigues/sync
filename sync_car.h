@@ -12,4 +12,7 @@ struct station {
 	int embarcando;
 };
 
+void station_init(struct station *estacao);
+
+
 #endif

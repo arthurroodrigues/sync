@@ -31,3 +31,23 @@ void station_on_board(struct station *estacao)
 	pthread_cond_signal(&estacao->todos_sentados);
 	pthread_mutex_unlock(&estacao->trava);
 }
+
+void station_load_car(struct station *estacao, int count)
+{
+	pthread_mutex_lock(&estacao->trava);
+
+	if (count == 0 || estacao->esperando == 0) {
+		pthread_mutex_unlock(&estacao->trava);
+		return;
+	}
+
+	estacao->assentos_livres = count;
+	pthread_cond_broadcast(&estacao->carro_chegou);
+
+	while ((estacao->esperando > 0 && estacao->assentos_livres > 0) ||
+	       estacao->embarcando > 0)
+		pthread_cond_wait(&estacao->todos_sentados, &estacao->trava);
+
+	estacao->assentos_livres = 0;
+	pthread_mutex_unlock(&estacao->trava);
+}

@@ -15,5 +15,6 @@ struct station {
 void station_init(struct station *estacao);
 void station_wait_for_car(struct station *estacao);
 void station_on_board(struct station *estacao);
+void station_load_car(struct station *estacao, int count);
 
 #endif

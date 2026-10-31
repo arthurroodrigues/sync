@@ -23,3 +23,11 @@ void station_wait_for_car(struct station *estacao)
 	estacao->embarcando++;
 	pthread_mutex_unlock(&estacao->trava);
 }
+
+void station_on_board(struct station *estacao)
+{
+	pthread_mutex_lock(&estacao->trava);
+	estacao->embarcando--;
+	pthread_cond_signal(&estacao->todos_sentados);
+	pthread_mutex_unlock(&estacao->trava);
+}

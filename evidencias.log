@@ -1,0 +1,7 @@
+Script started on 2026-10-30 22:06:24-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="218" LINES="14"]
+[?2004h]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ [7mgcc -Wall -Wextra -c sync_car.c[27mgcc -Wall -Wextra -c sync_car.c
+[?2004l[?2004h]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ [7mgcc -Wall -Wextra -c sync_car.c[27mgcc -Wall -Wextra -c sync_car.c
+[?2004l[?2004h]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ exit
+[?2004lexit
+
+Script done on 2026-10-30 22:13:33-03:00 [COMMAND_EXIT_CODE="0"]

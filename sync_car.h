@@ -13,6 +13,6 @@ struct station {
 };
 
 void station_init(struct station *estacao);
-
+void station_wait_for_car(struct station *estacao);
 
 #endif

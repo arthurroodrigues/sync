@@ -59,3 +59,424 @@ Looks good!
 [?2004lexit
 
 Script done on 2026-11-03 19:00:13-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-11-04 13:42:29-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="218" LINES="14"]
+[?2004h]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ make clean
+[?2004lrm -f sync_car *.o
+[?2004h]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ make
+[?2004lgcc -Wall -Wextra -pthread -o sync_car sync_car.c sync_car-runner.c
+[01m[Ksync_car-runner.c:[m[K In function ‘[01m[Kalarm_handler[m[K’:
+[01m[Ksync_car-runner.c:54:24:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfoo[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+   54 | void alarm_handler([01;35m[Kint foo[m[K)
+      |                    [01;35m[K~~~~^~~[m[K
+[?2004h]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ ./sync_car
+[?2004lcar entering station with 18 free seats
+car departed station with 18 new passenger(s) (expected 18)
+car entering station with 45 free seats
+car departed station with 45 new passenger(s) (expected 45)
+car entering station with 34 free seats
+car departed station with 34 new passenger(s) (expected 34)
+car entering station with 12 free seats
+car departed station with 3 new passenger(s) (expected 3)
+Looks good!
+[?2004h]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ [7mscript -a evidencias.log[27m[1Pscript -a evidencias.lo[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7mgit log --reverse --format='%h %ad %s' --date=format:'%d/%m %H:%M'[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cgit log --reverse --format='%h %ad %s' --date=format:'%d/%m %H:%M'
+[?2004l[?1h=735edaf 29/10 21:31 Initial commit[m
+ef3f6ed 29/10 21:52 chore: adiciona arquivos sync_car[m
+be2cfd0 29/10 22:02 feat: adiciona struct station no .h[m
+c563e5f 29/10 22:11 feat: implementa station_init[m
+8211ec6 30/10 22:10 feat: implementa station_wait_for_car[m
+523038f 30/10 22:14 feat: implementa station_on_board[m
+29360a6 30/10 22:21 feat: implementa station_load_car[m
+a77b622 03/11 18:57 chore: adiciona o runner de testes[m
+5874631 03/11 19:02 chore: adiciona Makefile para compilar[m
+2230878 03/11 19:05 test: registra compilação e execuções do runner em evidencias.log[m
+2025743 03/11 19:07 chore: ignora o executável sync_car no .gitignore[m
+f1a0914 03/11 19:15 docs: adiciona README[m
+[K[?1l>[?2004h]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ exit
+[?2004lexit
+
+Script done on 2026-11-04 13:44:03-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-11-04 14:09:21-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="218" LINES="14"]
+[?2004h]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ [7mgcc -Wall -Wextra -pthread -o teste_invalido teste_invalido.c sync_car.c[27m
+[7m./teste_invalido[27m
+[7mecho $?[27m[A[A]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ gcc -Wall -Wextra -pthread -o teste_invalido teste_invalido.c sync_car.c
+./teste_invalido
+echo $?[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l[?2004h]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ [7m./teste_invalido[27m./teste_invalido
+[?2004lstation_load_car(-1) retornou
+OK: ninguém embarcou e o carro não travou
+[?2004h]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ [7mecho $?[27mecho $?
+[?2004l0
+[?2004h]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ [K]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ [K]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ [K]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ [K]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ [K]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ [K]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ [K]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ [K]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ [K]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ [K]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ [K]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ [7mmake clean[27m
+[7mmake[27m
+[7m./sync_car[27m[A[A]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ make clean
+make
+./sync_car
+[?2004lrm -f sync_car *.o
+gcc -Wall -Wextra -pthread -o sync_car sync_car.c sync_car-runner.c
+[01m[Ksync_car-runner.c:[m[K In function ‘[01m[Kalarm_handler[m[K’:
+[01m[Ksync_car-runner.c:54:24:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfoo[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+   54 | void alarm_handler([01;35m[Kint foo[m[K)
+      |                    [01;35m[K~~~~^~~[m[K
+car entering station with 14 free seats
+car departed station with 14 new passenger(s) (expected 14)
+car entering station with 7 free seats
+car departed station with 7 new passenger(s) (expected 7)
+car entering station with 35 free seats
+car departed station with 35 new passenger(s) (expected 35)
+car entering station with 28 free seats
+car departed station with 28 new passenger(s) (expected 28)
+car entering station with 13 free seats
+car departed station with 13 new passenger(s) (expected 13)
+car entering station with 14 free seats
+car departed station with 3 new passenger(s) (expected 3)
+Looks good!
+[?2004h]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ [7mmake clean[27m
+[7mmake[27m
+[7m./sync_car[27m
+[7mfor i in $(seq 100); do ./sync_car | tail -1; done | sort | uniq -c[27m[A[A[Amake clean
+make
+./sync_car
+for i in $(seq 100); do ./sync_car | tail -1; done | sort | uniq -c
+[?2004lrm -f sync_car *.o
+gcc -Wall -Wextra -pthread -o sync_car sync_car.c sync_car-runner.c
+[01m[Ksync_car-runner.c:[m[K In function ‘[01m[Kalarm_handler[m[K’:
+[01m[Ksync_car-runner.c:54:24:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfoo[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+   54 | void alarm_handler([01;35m[Kint foo[m[K)
+      |                    [01;35m[K~~~~^~~[m[K
+car entering station with 22 free seats
+car departed station with 22 new passenger(s) (expected 22)
+car entering station with 48 free seats
+car departed station with 48 new passenger(s) (expected 48)
+car entering station with 44 free seats
+car departed station with 30 new passenger(s) (expected 30)
+Looks good!
+
+
+
+^C
+[?2004h]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ [7mfor i in $(seq 100); do ./sync_car | tail -1; done | sort | uniq -c[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor i in $(seq 100); do ./sync_car | tail -1; done | sort | uniq -c
+[?2004l    100 Looks good!
+[?2004h]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ make cel[K[Kla[Kean
+[?2004lrm -f sync_car *.o
+[?2004h]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ make
+[?2004lgcc -Wall -Wextra -pthread -o sync_car sync_car.c sync_car-runner.c
+[01m[Ksync_car-runner.c:[m[K In function ‘[01m[Kalarm_handler[m[K’:
+[01m[Ksync_car-runner.c:54:24:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfoo[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+   54 | void alarm_handler([01;35m[Kint foo[m[K)
+      |                    [01;35m[K~~~~^~~[m[K
+[?2004h]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ [7mfor i in $(seq 50); do echo -n "$i: "; ./sync_car | tail -1; done[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cfor i in $(seq 50); do echo -n "$i: "; ./sync_car | tail -1; done
+[?2004l1: Looks good!
+2: Looks good!
+3: Looks good!
+4: Looks good!
+5: Looks good!
+6: Looks good!
+7: Looks good!
+8: Looks good!
+9: Looks good!
+10: Looks good!
+11: Looks good!
+12: Looks good!
+13: Looks good!
+14: Looks good!
+15: Looks good!
+16: Looks good!
+17: Looks good!
+18: Looks good!
+19: Looks good!
+20: Looks good!
+21: Looks good!
+22: Looks good!
+23: Looks good!
+24: Looks good!
+25: Looks good!
+26: Looks good!
+27: Looks good!
+28: Looks good!
+29: Looks good!
+30: Looks good!
+31: Looks good!
+32: Looks good!
+33: Looks good!
+34: Looks good!
+35: Looks good!
+36: Looks good!
+37: Looks good!
+38: Looks good!
+39: Looks good!
+40: Looks good!
+41: Looks good!
+42: Looks good!
+43: Looks good!
+44: Looks good!
+45: Looks good!
+46: Looks good!
+47: Looks good!
+48: Looks good!
+49: Looks good!
+50: Looks good!
+[?2004h]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ make clean
+[?2004lrm -f sync_car *.o
+[?2004h]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ make
+[?2004lgcc -Wall -Wextra -pthread -o sync_car sync_car.c sync_car-runner.c
+[01m[Ksync_car-runner.c:[m[K In function ‘[01m[Kalarm_handler[m[K’:
+[01m[Ksync_car-runner.c:54:24:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfoo[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+   54 | void alarm_handler([01;35m[Kint foo[m[K)
+      |                    [01;35m[K~~~~^~~[m[K
+[?2004h]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ [7mfor i in $(seq 50); do ./sync_car | tail -1; done[27mfor i in $(seq 50); do ./sync_car | tail -1; done[K[K[K]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ for i in $(seq 50); do ./sync_car | tail -1; do[K]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ for i in $(seq 50); do ./sync_car | tail -1; do[K]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ for i in $(seq 50); do ./sync_car | tail -1; do[K]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ for i in $(seq 50); do ./sync_car | tail -1; do[K]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ for i in $(seq 50); do ./sync_car | tail -1; do[K]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ for i in $(seq 50); do ./sync_car | tail -1; do[K]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ for i in $(seq 50); do ./sync_car | tail -1; do[K]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ for i in $(seq 50); do ./sync_car | tail -1; do[K]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ for i in $(seq 50); do ./sync_car | tail -1; do[K]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ for i in $(seq 50); do ./sync_car | tail -1; do[K]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ for i in $(seq 50); do ./sync_car | tail -1; do[K]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ for i in $(seq 50); do ./sync_car | tail -1; do[K]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ for i in $(seq 50); do ./sync_car | tail -1; do[C[1P[C[1P[1@4[1@ 
+[?2004lbash: syntax error near unexpected token `do'
+[?2004h]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ [7mfor i in $(seq 50); do ./sync_car | tail -1; done[27mfor i in $(seq 50); do ./sync_car | tail -1; done[2@^[[3@[2~[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[2@^?[2P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[7mfor i in $(seq 50); do ./sync_car | tail -1; done[27mfor i in $(seq 50); do ./sync_car | tail -1; done^[[2~[K[K[K[K[Ke[1P[1@4
+[?2004lLooks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+[?2004h]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ make clean
+[?2004lrm -f sync_car *.o
+[?2004h]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ make
+[?2004lgcc -Wall -Wextra -pthread -o sync_car sync_car.c sync_car-runner.c
+[01m[Ksync_car-runner.c:[m[K In function ‘[01m[Kalarm_handler[m[K’:
+[01m[Ksync_car-runner.c:54:24:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kfoo[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc-15.2.0/gcc/Warning-Options.html#index-Wno-unused-parameter-Wunused-parameter]8;;[m[K]
+   54 | void alarm_handler([01;35m[Kint foo[m[K)
+      |                    [01;35m[K~~~~^~~[m[K
+[?2004h]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ [7mfor i in $(seq 50); do ./sync_car | tail -1; done[27mfor i in $(seq 50); do ./sync_car | tail -1; done[C[1P[1@4
+[?2004lLooks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+Looks good!
+[?2004h]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ [K]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ [K]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ [H[2J]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ #include <stdio.h>
+#include <stdlib.h>
+#include <signal.h>
+#include <unistd.h>
+#include <pthread.h>
+
+#include "sync_car.h"
+
+volatile int embarcados = 0;
+volatile int carro_saiu = 0;
+
+struct dados {
+        struct station *estacao;
+        int assentos;
+};
+
+void *passageiro(void *arg)
+{
+        station_wait_for_car((struct station *) arg);
+        __sync_add_and_fetch(&embarcados, 1);
+        return NULL;
+}
+
+void *carro(void *arg)
+{
+        struct dados *d = (struct dados *) arg;
+        station_load_car(d->estacao, d->assentos);
+        carro_saiu = 1;
+        return NULL;
+}
+
+void estourou(int sinal)
+{
+        (void) sinal;
+        fprintf(stderr, "FALHA: o teste travou\n");
+        exit(1);
+}
+
+int main(void)
+{
+        struct station estacao;
+        pthread_t pass[3];
+        pthread_t tcarro;
+        struct dados d = {&estacao, 3};
+        int i;
+
+        station_init(&estacao);
+        signal(SIGALRM, estourou);
+        alarm(5);
+
+        for (i = 0; i < 3; i++)
+                pthread_create(&pass[i], NULL, passageiro, &estacao);
+        usleep(200000);
+
+[7m        station_load_car(&estacao, 0);[27m
+[7m        usleep(100000);[27m
+[7m        if (embarcados != 0) {[27m
+[7m                printf("FALHA caso 1: embarcou gente com 0 assentos\n");[27m
+[7m                return 1;[27m
+[7m        }[27m
+[7m        printf("OK caso 1: carro com 0 assentos retornou e ninguem embarcou\n");[27m
+
+[7m        pthread_create(&tcarro, NULL, carro, &d);[27m
+[7m        while (embarcados < 3)[27m
+[7m                usleep(10000);[27m
+[7m        if (carro_saiu) {[27m[A[A[A[A[A[A[A[A[A[A[A        station_load_car(&estacao, 0);
+        usleep(100000);
+        if (embarcados != 0) {
+                printf("FALHA caso 1: embarcou gente com 0 assentos\n");
+                return 1;
+        }
+        printf("OK caso 1: carro com 0 assentos retornou e ninguem embarcou\n");
+
+        pthread_create(&tcarro, NULL, carro, &d);
+        while (embarcados < 3)
+                usleep(10000);
+[1P        if (carro_saiu) [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[C[C[C[C[C[C[C[C[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K[K[C[C[C[C[C[C[C[C[K[A[K
+[K[A[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[A[K
+[K[A[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[A[A[K
+[K
+[K[A[A[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[A[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[A[A[K
+[K
+[K[A[A[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[A[K
+[K[A[C[C[C[C[C[C[C[C[A[A[C[C[C[C[K
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[A[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[A[A[K
+[K
+[K[A[A[C[C[C[C[A[A[A[C[C[C[C[K
+[K
+[K
+[K[A[A[A[C[C[C[C[C[C[C[C[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[C[C[C[C[C[C[C[C[K[A[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[A[A[C[C[C[C[C[C[C[C[C[C[K
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[A[A[A[C[C[C[C[C[C[C[C[C[C[K
+[K
+[K
+[K[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[C[C[C[C[C[C[C[C[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[A[A[C[C[C[C[C[C[C[C[C[K
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[A[A[A[C[C[C[C[C[C[C[C[C[C[K
+[K
+[K
+[K[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[C[C[C[C[C[C[C[C[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[A[A[A[C[C[C[C[C[C[C[K
+[K
+[K
+[K[A[A[A[C[C[C[C[C[C[C[C[C[C[C[C[H[2J]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ #include <stdio.h>
+#include <stdlib.h>
+#include <signal.h>
+#include <unistd.h>
+#include <pthread.h>
+
+#include "sync_car.h"
+
+volatile int embarcados = 0;
+volatile int carro_saiu = 0;
+
+struct dados {
+        struct station *estacao;
+        [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[A[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[A[A[K
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[A[A[K
+[K
+[K[A[A[C[C[C[C[C[C[C[C[C[A[K
+[K[A[C[C[C[C[C[C[C[C[C[A[K
+[K[A[C[C[C[C[C[C[C[C[C[A[K
+[K[A[C[C[C[C[C[C[C[C[C[A]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ [C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[7mgcc -Wall -Wextra -pthread -o teste_limite teste_limite.c sync_car.c[27m
+[7m./teste_limite[27m
+[7mecho $?[27m[A[A]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ gcc -Wall -Wextra -pthread -o teste_limite teste_limite.c sync_car.c
+./teste_limite
+echo $?
+[?2004lOK caso 1: carro com 0 assentos retornou e ninguem embarcou
+OK caso 2: carro com 3 assentos levou os 3 passageiros e saiu
+0
+[?2004h]0;arthur@DESKTOP-0VQHRHI: /mnt/c/Users/User/Desktop/ara[01;32marthur@DESKTOP-0VQHRHI[00m:[01;34m/mnt/c/Users/User/Desktop/ara[00m$ exit
+[?2004lexit
+
+Script done on 2026-11-04 14:20:27-03:00 [COMMAND_EXIT_CODE="0"]
